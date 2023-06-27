@@ -1,0 +1,174 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.text-nav {
+  color: #555555;
+  font-size: 15px;
+  font-weight: bold;
+}
+.emblem-text {
+  font-size: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+.carousel-item > img {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: cover !important;
+}
+
+.footer-bg {
+  background-color: #343a40;
+}
+.footer {
+  margin: 0;
+  text-decoration: none;
+  display: block;
+  color: #ffffff;
+  font-size: 13px;
+}
+.footer-icons {
+  width: 15px;
+}
+.footer-des {
+  font-size: 10px;
+}
+.footer-head {
+  font-size: 15px;
+}
+/* .mainbg {
+  background-image: url("../public/images/bg.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+/* @keyframes App-logo-spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+} */
+.inline_main {
+  box-sizing: border-box;
+  width: 857px;
+  height: 461px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 18px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+/* Input container */
+.input-container {
+  position: relative;
+  margin: 20px;
+}
+
+/* Input field */
+.input-field {
+  display: block;
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  background-color: transparent;
+}
+
+/* Input label */
+.input-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: rgba(204, 204, 204, 0);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* Input highlight */
+.input-highlight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #ff0000;
+  transition: all 0.3s ease;
+}
+
+/* Input field:focus styles */
+.input-field:focus + .input-label {
+  top: -20px;
+  font-size: 12px;
+  color: #ff0000;
+}
+
+.input-field:focus + .input-label + .input-highlight {
+  width: 80%;
+}
+/* .background {
+  background-image: url("../public/images/student.png");
+  background-size: "contain";
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+} */
+
+/* .img {
+  height: 460px;
+  width: 450px;
+  border-radius: 0px 30px 30px 0px;
+  position: absolute;
+  left: -50px;
+} */
+
+.right {
+  position: relative;
+}
+@media screen and (max-width: 576px) {
+  .inline_main {
+      width: 100%;
+  }
+  .logfirstimg {
+      display: block;
+  }
+}
