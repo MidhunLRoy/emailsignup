@@ -3,16 +3,18 @@
 namespace App\Http\Controllers;
 use App\Models\state;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 class StateController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-     public function states()
+     public function states($country_id)
     {
-        $state = state::all();
+        $data=DB::table('states')->where('country_id',$country_id)->get();
 
-        return response()->json($state);
+        return $data;
     }
 
     /**
